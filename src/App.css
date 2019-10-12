@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.app {
+    background-color: aliceblue;
+}
+
+.dark {
+    background-color: rgba(29, 25, 25, 0.651) !important;
+    color: rgb(159, 167, 175) !important;
+}

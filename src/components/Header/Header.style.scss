@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    margin-top: 30px;
+
+    li a {
+      padding: 20px;
+      text-decoration: none;
+      color: #80bbf1;
+      cursor: pointer;
+    }
+
+    li img {
+      height: 41px;
+      position: relative;
+      bottom: 19px;
+      margin-right: 14px;
+    }
+  }
+}
+
+.brand {
+  height: 80px;
+  margin: 10px 0 20px 20px;
+}
+
+.link:focus {
+  color: #a7d1f8;
+}
+
+.ui.dropdown {
+  .menu {
+    top: 21px !important;
+  }
+}
+
+.theme-item {
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+}

@@ -1,0 +1,25 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    form {
+        text-align: center;
+    }
+}
+
+.youtube-results {
+    flex: 2;
+
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.content-container {
+    display: flex;
+}
