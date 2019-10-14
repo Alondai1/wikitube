@@ -42,6 +42,10 @@ class LoginPage extends React.Component {
         this.props.history.push("/");
     }
 
+    componentDidMount() {
+        if (this.props.currentUser) this.props.history.push("/");
+    }
+
 
 
     render() {

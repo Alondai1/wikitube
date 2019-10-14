@@ -11,3 +11,8 @@ ul {
     background-color: rgba(29, 25, 25, 0.651) !important;
     color: rgb(159, 167, 175) !important;
 }
+
+.beitar {
+    background-color: yellow !important;
+    color: black !important;
+}

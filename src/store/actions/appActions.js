@@ -46,5 +46,42 @@ export const handleSignup = (creds) => {
   };
 };
 
+export const saveToHistory = (term, username) => {    
+  return (dispatch) => {
+    return  userService.saveToHistory(term, username)
+      .then(response => {          
+        dispatch(createAction(response, types.SAVE_TO_HISTORY))
+      })
+      .catch(error => {
+        throw(error);
+      });
+  };
+};
+
+export const clearHistory = (username) => {    
+  return (dispatch) => {
+    return  userService.clearHistory(username)
+      .then(response => {          
+        dispatch(createAction(response, types.CLEAR_HISTORY))
+      })
+      .catch(error => {
+        throw(error);
+      });
+  };
+};
+
+export const getUserDB = () => {    
+  return (dispatch) => {
+    return  userService.getUserDB()
+      .then(response => {          
+        dispatch(createAction(response, types.GET_USER_DB))
+      })
+      .catch(error => {
+        throw(error);
+      });
+  };
+};
+
+
 
 

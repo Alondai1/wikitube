@@ -5,8 +5,8 @@ const VideoPlayer = ({ videoId }) => {
         <div className="video-player">
         <iframe
             title="videoPlayer"
-            width="350"
-            height="300"
+            width="450"
+            height="250"
             src={`https://www.youtube.com/embed/${videoId}`}
             frameBorder="0">
         </iframe>

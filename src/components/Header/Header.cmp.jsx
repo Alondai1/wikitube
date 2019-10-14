@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter} from "react-router-dom";
 import "./Header.style.scss";
 import { Dropdown } from "semantic-ui-react";
 import { setTheme } from "../../store/actions/appActions";
@@ -30,6 +30,7 @@ class Header extends React.Component {
     handleLogout = () => {
         const { dispatch } = this.props
         dispatch(handleLogin(''));
+        this.props.history.push("/");
     }
 
 
@@ -61,6 +62,7 @@ class Header extends React.Component {
                         <Dropdown item text='Change Theme'>
                             <Dropdown.Menu>
                                 <Dropdown.Item onClick={() => this.setTheme('dark')} className="theme-item">Dark</Dropdown.Item>
+                                <Dropdown.Item onClick={() => this.setTheme('beitar')} className="theme-item">beitar</Dropdown.Item>
                                 <Dropdown.Item onClick={() => this.setTheme('')} className="theme-item">Classic</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
@@ -95,4 +97,4 @@ const mapStateToProps = ({ appReducer }) => {
     };
 };
 
-export default connect(mapStateToProps)(Header);
+export default withRouter(connect(mapStateToProps)(Header));

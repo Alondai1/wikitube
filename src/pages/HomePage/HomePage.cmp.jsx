@@ -1,13 +1,15 @@
 import React from 'react';
 import './HomePage.style.scss'
+import { NavLink } from "react-router-dom";
 import SearchBar from '../../components/SearchBar/SearchBar.cmp'
+import Footer from '../../components/Footer/Footer.cmp'
 import WikiInfo from '../../components/WikiInfo/WikiInfo.cmp'
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.cmp'
 import YoutubeResultsList from '../../components/YoutubeResultsList/YoutubeResultsList.cmp'
 import { getYoutubeResults, getwikiInfo } from "../../store/actions/mediaActions";
-import { setCurrentVideo } from "../../store/actions/appActions";
+import { setCurrentVideo, saveToHistory, clearHistory } from "../../store/actions/appActions";
 import { connect } from "react-redux";
-import { Loader } from 'semantic-ui-react'
+import { Loader, Button, Icon } from 'semantic-ui-react'
 
 
 
@@ -19,8 +21,8 @@ class HomePage extends React.Component {
         const { dispatch } = this.props
         if (!this.props.youtubeResults) {
             try {
-                dispatch(getYoutubeResults('ringo star'));
-                dispatch(getwikiInfo('ringo star'));
+                dispatch(getYoutubeResults('alan parsons'));
+                dispatch(getwikiInfo('alan parsons'));
             } catch (err) {
                 console.log(err);
             }
@@ -33,6 +35,8 @@ class HomePage extends React.Component {
             dispatch(getYoutubeResults(res));
             dispatch(getwikiInfo(res));
             dispatch(setCurrentVideo(''));
+            if (this.props.currentUser) dispatch(saveToHistory(res, this.props.currentUser.username));
+
         } catch (err) {
             console.log(err);
         }
@@ -43,10 +47,25 @@ class HomePage extends React.Component {
         dispatch(setCurrentVideo(videoId));
     }
 
+    clearHistory = () => {
+        const { dispatch } = this.props
+        console.log('sd');
+        dispatch(clearHistory(this.props.currentUser.username));
+    }
+
 
     render() {
         return (
             <div className="home-page">
+                {
+                    (this.props.currentUser && this.props.currentUser.isAdmin) &&
+                    <NavLink to="/admin">
+                    <Button className="admin-button" icon labelPosition='left'>
+                        <Icon name='user' />
+                        Admin Zone
+                  </Button>
+                    </NavLink>
+                }
                 <SearchBar handleSearchSubmit={this.handleSearchSubmit} />
                 {
                     (this.props.wikiInfo && this.props.youtubeResults) ?
@@ -66,6 +85,8 @@ class HomePage extends React.Component {
                             </div>
                         </div> : <Loader active content='Loading'></Loader>
                 }
+                {this.props.currentUser && <Footer clearHistory={this.clearHistory}
+                    currentUser={this.props.currentUser} />}
             </div>
         )
     }
@@ -74,13 +95,14 @@ class HomePage extends React.Component {
 
 const mapStateToProps = ({ mediaReducer, appReducer }) => {
     const { youtubeResults, wikiInfo } = mediaReducer;
-    const { currentVideo, currentTheme } = appReducer
+    const { currentVideo, currentTheme, currentUser } = appReducer
 
     return {
         youtubeResults,
         wikiInfo,
         currentVideo,
-        currentTheme
+        currentTheme,
+        currentUser
     };
 };
 
