@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "​https://alondai1.github.io/wikitube/precache-manifest.bdcac301c97e81a436758988aee29f8d.js"
+  "​https://alondai1.github.io/wikitube/precache-manifest.9047c4c771b856546c8a6dcf675003d2.js"
 );
 
 self.addEventListener('message', (event) => {

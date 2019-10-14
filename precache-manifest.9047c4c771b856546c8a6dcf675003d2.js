@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f85aac62a3580ac953fb7eb359b9c171",
+    "revision": "31729160a1e25f6976fadc53b5bf381c",
     "url": "​https://alondai1.github.io/wikitube/index.html"
   },
   {
