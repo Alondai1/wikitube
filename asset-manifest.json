@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "​https://alondai1.github.io/wikitube​/static/css/main.063f1458.chunk.css",
-    "main.js": "​https://alondai1.github.io/wikitube​/static/js/main.8dff1bce.chunk.js",
-    "main.js.map": "​https://alondai1.github.io/wikitube​/static/js/main.8dff1bce.chunk.js.map",
-    "runtime-main.js": "​https://alondai1.github.io/wikitube​/static/js/runtime-main.70f1d2d2.js",
-    "runtime-main.js.map": "​https://alondai1.github.io/wikitube​/static/js/runtime-main.70f1d2d2.js.map",
-    "static/css/2.1a293577.chunk.css": "​https://alondai1.github.io/wikitube​/static/css/2.1a293577.chunk.css",
-    "static/js/2.3e9a6c98.chunk.js": "​https://alondai1.github.io/wikitube​/static/js/2.3e9a6c98.chunk.js",
-    "static/js/2.3e9a6c98.chunk.js.map": "​https://alondai1.github.io/wikitube​/static/js/2.3e9a6c98.chunk.js.map",
-    "index.html": "​https://alondai1.github.io/wikitube​/index.html",
-    "precache-manifest.4853580d1f5f186113dd51d6c0059c08.js": "​https://alondai1.github.io/wikitube​/precache-manifest.4853580d1f5f186113dd51d6c0059c08.js",
-    "service-worker.js": "​https://alondai1.github.io/wikitube​/service-worker.js",
-    "static/css/2.1a293577.chunk.css.map": "​https://alondai1.github.io/wikitube​/static/css/2.1a293577.chunk.css.map",
-    "static/css/main.063f1458.chunk.css.map": "​https://alondai1.github.io/wikitube​/static/css/main.063f1458.chunk.css.map",
-    "static/media/semantic.min.css": "​https://alondai1.github.io/wikitube​/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "​https://alondai1.github.io/wikitube/static/css/main.063f1458.chunk.css",
+    "main.js": "​https://alondai1.github.io/wikitube/static/js/main.6aa80d6e.chunk.js",
+    "main.js.map": "​https://alondai1.github.io/wikitube/static/js/main.6aa80d6e.chunk.js.map",
+    "runtime-main.js": "​https://alondai1.github.io/wikitube/static/js/runtime-main.34210049.js",
+    "runtime-main.js.map": "​https://alondai1.github.io/wikitube/static/js/runtime-main.34210049.js.map",
+    "static/css/2.2ca9428c.chunk.css": "​https://alondai1.github.io/wikitube/static/css/2.2ca9428c.chunk.css",
+    "static/js/2.3e9a6c98.chunk.js": "​https://alondai1.github.io/wikitube/static/js/2.3e9a6c98.chunk.js",
+    "static/js/2.3e9a6c98.chunk.js.map": "​https://alondai1.github.io/wikitube/static/js/2.3e9a6c98.chunk.js.map",
+    "index.html": "​https://alondai1.github.io/wikitube/index.html",
+    "precache-manifest.bdcac301c97e81a436758988aee29f8d.js": "​https://alondai1.github.io/wikitube/precache-manifest.bdcac301c97e81a436758988aee29f8d.js",
+    "service-worker.js": "​https://alondai1.github.io/wikitube/service-worker.js",
+    "static/css/2.2ca9428c.chunk.css.map": "​https://alondai1.github.io/wikitube/static/css/2.2ca9428c.chunk.css.map",
+    "static/css/main.063f1458.chunk.css.map": "​https://alondai1.github.io/wikitube/static/css/main.063f1458.chunk.css.map",
+    "static/media/semantic.min.css": "​https://alondai1.github.io/wikitube/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.70f1d2d2.js",
-    "static/css/2.1a293577.chunk.css",
+    "static/js/runtime-main.34210049.js",
+    "static/css/2.2ca9428c.chunk.css",
     "static/js/2.3e9a6c98.chunk.js",
     "static/css/main.063f1458.chunk.css",
-    "static/js/main.8dff1bce.chunk.js"
+    "static/js/main.6aa80d6e.chunk.js"
   ]
 }
